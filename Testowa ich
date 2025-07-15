@@ -1,0 +1,131 @@
+Add file ⯆ → Create new file
+index.html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IceMix – Koncentraty i maszyny do lodów</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: url('https://cdn.pixabay.com/photo/2016/07/22/07/27/ice-cream-1534121_1280.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    nav {
+      text-align: right;
+      padding: 10px 20px;
+    }
+    nav a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #004466;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #ffeeaa;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" onclick="switchLanguage('pl')">PL</a>
+    <a href="#" onclick="switchLanguage('en')">EN</a>
+  </nav>
+
+  <header>
+    <h1 data-pl="IceMix – Lody, które podbiją Twoich klientów" data-en="IceMix – Ice Creams Your Customers Will Love">IceMix – Lody, które podbiją Twoich klientów</h1>
+    <p data-pl="Profesjonalne koncentraty do lodów i granity oraz nowoczesne maszyny do lodów świderków – kompletne rozwiązania dla gastronomii i punktów sezonowych"
+       data-en="Professional ice cream and granita mixes, plus modern twist ice cream machines – complete solutions for HoReCa and seasonal points">Profesjonalne koncentraty do lodów i granity oraz nowoczesne maszyny do lodów świderków – kompletne rozwiązania dla gastronomii i punktów sezonowych</p>
+  </header>
+
+  <section>
+    <h2 data-pl="Maszyny do lodów – PSM MODEL 250" data-en="Ice Cream Machines – PSM MODEL 250">Maszyny do lodów – PSM MODEL 250</h2>
+    <p data-pl="PSM 250 to zaawansowane urządzenie do produkcji lodów świderków z niezależnymi cylindrami, funkcją nocnego chłodzenia, licznikami porcji i systemem automatycznego czyszczenia. Idealny wybór dla profesjonalistów."
+       data-en="The PSM 250 is an advanced twist ice cream machine with independent cylinders, night cooling, portion counters, and auto-cleaning. Ideal for professionals.">PSM 250 to zaawansowane urządzenie do produkcji lodów świderków...</p>
+  </section>
+
+  <section>
+    <h2 data-pl="Lody świderki PREMIUM" data-en="Twist Ice Cream PREMIUM">Lody świderki PREMIUM</h2>
+    <div class="grid">
+      <div class="card"><h3>Gruszka z wanilią / Pear Vanilla</h3></div>
+      <div class="card"><h3>Jagoda leśna / Forest Berry</h3></div>
+      <div class="card"><h3>Solony karmel / Salted Caramel</h3></div>
+      <div class="card"><h3>Mango-maluza / Mango Raspberry</h3></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-pl="Lody włoskie (softy)" data-en="Soft Ice Cream (Loft)">Lody włoskie (softy)</h2>
+    <div class="grid">
+      <div class="card"><h3>PREMIUM</h3></div>
+      <div class="card"><h3>STANDARD</h3></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-pl="Granita / Slushy" data-en="Granita / Slushy">Granita / Slushy</h2>
+    <p data-pl="Orzeźwiające koncentraty do granity – tylko naturalne barwniki i intensywne aromaty..."
+       data-en="Refreshing granita concentrates – only natural coloring and intense aromas...">Orzeźwiające koncentraty do granity...</p>
+  </section>
+
+  <footer>
+    <h2 data-pl="Kontakt z nami" data-en="Contact Us">Kontakt z nami</h2>
+    <p><strong>IceMix – IMM Sp. z o.o.</strong><br>
+    Nadnotecki Park Przemysłowy 13, 89-100 Paterek<br>
+    📞 <a href="tel:+48501234567">+48 501 234 567</a><br>
+    ✉️ <a href="mailto:kontakt@icemix.pl">kontakt@icemix.pl</a><br>
+    🌐 <a href="http://www.icemix.pl">www.icemix.pl</a></p>
+    <p data-pl="Godziny pracy: Pon–Pt 8:00–16:00" data-en="Business hours: Mon–Fri 8:00–16:00">Godziny pracy: Pon–Pt 8:00–16:00</p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.innerText = el.getAttribute('data-' + lang);
+      });
+    }
+  </script>
+</body>
+</html>
