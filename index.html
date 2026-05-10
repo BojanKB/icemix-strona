@@ -2,5 +2,118 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  ...
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICEMIX - Przykład Responsywnej Strony</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- NAGŁÓWEK / MENU -->
+  <!-- Na telefonie: hamburger menu, Na komputerze: linki obok siebie -->
+  <header class="bg-blue-600 text-white">
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold">ICEMIX</div>
+
+        <!-- Menu na komputerze (ukryte na telefonie) -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#" class="hover:text-blue-200">Strona główna</a></li>
+          <li><a href="#" class="hover:text-blue-200">O nas</a></li>
+          <li><a href="#" class="hover:text-blue-200">Usługi</a></li>
+          <li><a href="#" class="hover:text-blue-200">Kontakt</a></li>
+        </ul>
+
+        <!-- Przycisk menu na telefonie (ukryty na komputerze) -->
+        <button class="md:hidden text-2xl">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SEKCJA HERO -->
+  <!-- Na telefonie: mały tekst, Na komputerze: duży tekst -->
+  <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-12 md:py-24">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+        Witaj w ICEMIX
+      </h1>
+      <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
+        To jest przykład responsywnej strony. Zmień rozmiar okna przeglądarki żeby zobaczyć jak elementy się dopasowują!
+      </p>
+      <button class="bg-white text-blue-600 px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+        Dowiedz się więcej
+      </button>
+    </div>
+  </section>
+
+  <!-- SEKCJA Z KARTAMI -->
+  <!-- Na telefonie: 1 kolumna, Na tablecie: 2 kolumny, Na komputerze: 3 kolumny -->
+  <section class="py-12 md:py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">
+        Nasze Usługi
+      </h2>
+
+      <!-- SIATKA KART - responsywna! -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+        <!-- Karta 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🧊</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Usługa 1</h3>
+          <p class="text-gray-600">Opis pierwszej usługi. Na telefonie ta karta zajmie całą szerokość.</p>
+        </div>
+
+        <!-- Karta 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">❄️</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Usługa 2</h3>
+          <p class="text-gray-600">Opis drugiej usługi. Na tablecie będą 2 karty obok siebie.</p>
+        </div>
+
+        <!-- Karta 3 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🌨️</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">Usługa 3</h3>
+          <p class="text-gray-600">Opis trzeciej usługi. Na komputerze będą 3 karty w rzędzie.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEKCJA KONTAKT -->
+  <!-- Na telefonie: kolumna, Na komputerze: 2 kolumny obok siebie -->
+  <section class="bg-gray-800 text-white py-12 md:py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-8">
+
+        <div class="md:w-1/2">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Skontaktuj się z nami</h2>
+          <p class="text-gray-300">Na telefonie ten tekst jest nad formularzem. Na komputerze - obok.</p>
+        </div>
+
+        <div class="md:w-1/2">
+          <form class="space-y-4">
+            <input type="email" placeholder="Twój email"
+                   class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button type="submit"
+                    class="w-full md:w-auto bg-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Wyślij
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STOPKA -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2026 ICEMIX - Przykład responsywnej strony</p>
+      <p class="mt-2 text-sm">Zmień rozmiar okna przeglądarki żeby zobaczyć responsywność!</p>
+    </div>
+  </footer>
+
+</body>
 </html>
