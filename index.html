@@ -2,5 +2,311 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  ...
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CFO – Outsourcing dyrektora finansowego</title>
+  <meta name="description"
+        data-pl="CFO na godziny, controlling, budżetowanie i prognozy cash flow dla małych i średnich firm."
+        data-en="Fractional CFO, controlling, budgeting and cash flow forecasting for small and medium companies."
+        content="CFO na godziny, controlling, budżetowanie i prognozy cash flow dla małych i średnich firm.">
+  <style>
+    :root {
+      --navy: #0b3d5c;
+      --navy-dark: #072a40;
+      --accent: #c9a227;
+      --ink: #2b3440;
+      --muted: #5d6b7a;
+      --bg: #f6f8fa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      background: white;
+      border-bottom: 1px solid #e3e8ee;
+    }
+    nav .brand {
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--navy);
+    }
+    nav .lang-switch a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    nav .lang-switch a.active {
+      background: var(--navy);
+      color: white;
+    }
+    header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 16px;
+      line-height: 1.2;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 28px;
+      color: #d6e2ec;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--navy-dark);
+      font-weight: 600;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--navy);
+    }
+    .lead {
+      color: var(--muted);
+      max-width: 760px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-top: 3px solid var(--navy);
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1.1rem;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .card .step {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .card.highlight {
+      border-top-color: var(--accent);
+    }
+    .price {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 8px 0;
+    }
+    ul.plain {
+      color: var(--muted);
+      padding-left: 20px;
+      margin: 0;
+    }
+    footer {
+      background: var(--navy-dark);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer h2 { color: white; }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer .note {
+      color: #8fa6b8;
+      font-size: 0.85rem;
+      margin-top: 24px;
+    }
+    @media (max-width: 600px) {
+      header { padding: 60px 20px; }
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="brand">CFO</span>
+    <span class="lang-switch">
+      <a href="#" data-lang="pl" class="active" onclick="switchLanguage('pl'); return false;">PL</a>
+      <a href="#" data-lang="en" onclick="switchLanguage('en'); return false;">EN</a>
+    </span>
+  </nav>
+
+  <header>
+    <h1 data-pl="Dyrektor finansowy wtedy, gdy go potrzebujesz"
+        data-en="A CFO exactly when you need one">Dyrektor finansowy wtedy, gdy go potrzebujesz</h1>
+    <p data-pl="Outsourcing CFO, controlling i planowanie finansowe dla firm, które wyrosły z księgowości, ale nie potrzebują jeszcze dyrektora na etat."
+       data-en="Fractional CFO, controlling and financial planning for companies that have outgrown bookkeeping but do not yet need a full-time finance director.">Outsourcing CFO, controlling i planowanie finansowe dla firm, które wyrosły z księgowości, ale nie potrzebują jeszcze dyrektora na etat.</p>
+    <a class="cta" href="#kontakt" data-pl="Umów bezpłatną konsultację" data-en="Book a free consultation">Umów bezpłatną konsultację</a>
+  </header>
+
+  <section>
+    <h2 data-pl="Zakres usług" data-en="What we do">Zakres usług</h2>
+    <p class="lead"
+       data-pl="Pracujemy w modelu abonamentowym lub projektowym – od kilku dni w miesiącu do pełnego wsparcia przy transakcji."
+       data-en="We work on a retainer or per-project basis – from a few days a month to full support during a transaction.">Pracujemy w modelu abonamentowym lub projektowym – od kilku dni w miesiącu do pełnego wsparcia przy transakcji.</p>
+    <div class="grid">
+      <div class="card">
+        <h3 data-pl="CFO na godziny" data-en="Fractional CFO">CFO na godziny</h3>
+        <p data-pl="Stała opieka nad finansami spółki: nadzór nad księgowością, polityka finansowa, udział w zarządzie i radzie nadzorczej."
+           data-en="Ongoing stewardship of company finances: oversight of accounting, financial policy, participation in board meetings.">Stała opieka nad finansami spółki: nadzór nad księgowością, polityka finansowa, udział w zarządzie i radzie nadzorczej.</p>
+      </div>
+      <div class="card">
+        <h3 data-pl="Controlling i raportowanie" data-en="Controlling &amp; reporting">Controlling i raportowanie</h3>
+        <p data-pl="Miesięczny pakiet raportowy, wskaźniki KPI, rachunek wyników w układzie zarządczym i analiza odchyleń od planu."
+           data-en="Monthly reporting pack, KPIs, management P&amp;L and variance analysis against plan.">Miesięczny pakiet raportowy, wskaźniki KPI, rachunek wyników w układzie zarządczym i analiza odchyleń od planu.</p>
+      </div>
+      <div class="card">
+        <h3 data-pl="Budżet i prognoza cash flow" data-en="Budgeting &amp; cash flow">Budżet i prognoza cash flow</h3>
+        <p data-pl="Budżet roczny, prognoza przepływów pieniężnych 13 tygodni oraz model finansowy ze scenariuszami."
+           data-en="Annual budget, 13-week cash flow forecast and a scenario-based financial model.">Budżet roczny, prognoza przepływów pieniężnych 13 tygodni oraz model finansowy ze scenariuszami.</p>
+      </div>
+      <div class="card">
+        <h3 data-pl="Analiza rentowności" data-en="Profitability analysis">Analiza rentowności</h3>
+        <p data-pl="Marża na produkcie, kliencie i kanale sprzedaży. Kalkulacja kosztów, polityka cenowa i próg rentowności."
+           data-en="Margin by product, customer and sales channel. Costing, pricing policy and break-even analysis.">Marża na produkcie, kliencie i kanale sprzedaży. Kalkulacja kosztów, polityka cenowa i próg rentowności.</p>
+      </div>
+      <div class="card">
+        <h3 data-pl="Pozyskanie finansowania" data-en="Raising finance">Pozyskanie finansowania</h3>
+        <p data-pl="Przygotowanie dokumentacji dla banku, leasingodawcy lub inwestora, negocjacje warunków i nadzór nad kowenantami."
+           data-en="Preparing documentation for banks, lessors or investors, negotiating terms and monitoring covenants.">Przygotowanie dokumentacji dla banku, leasingodawcy lub inwestora, negocjacje warunków i nadzór nad kowenantami.</p>
+      </div>
+      <div class="card">
+        <h3 data-pl="Due diligence i transakcje" data-en="Due diligence &amp; deals">Due diligence i transakcje</h3>
+        <p data-pl="Wsparcie po stronie kupującego lub sprzedającego: uporządkowanie danych finansowych, wycena, data room."
+           data-en="Buy-side or sell-side support: cleaning up financial data, valuation, data room.">Wsparcie po stronie kupującego lub sprzedającego: uporządkowanie danych finansowych, wycena, data room.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-pl="Jak zaczynamy" data-en="How we start">Jak zaczynamy</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="step">1</span>
+        <h3 data-pl="Rozmowa wstępna" data-en="Intro call">Rozmowa wstępna</h3>
+        <p data-pl="Bezpłatne 45 minut. Ustalamy, gdzie dziś boli: płynność, marża, raportowanie czy rozmowy z bankiem."
+           data-en="A free 45 minutes. We pin down what hurts today: liquidity, margin, reporting or bank conversations.">Bezpłatne 45 minut. Ustalamy, gdzie dziś boli: płynność, marża, raportowanie czy rozmowy z bankiem.</p>
+      </div>
+      <div class="card">
+        <span class="step">2</span>
+        <h3 data-pl="Przegląd finansów" data-en="Finance review">Przegląd finansów</h3>
+        <p data-pl="Dwa tygodnie na analizę danych i procesów. Efektem jest raport z listą priorytetów i szacowanym wpływem na wynik."
+           data-en="Two weeks to review data and processes. The outcome is a report with prioritised actions and their estimated impact.">Dwa tygodnie na analizę danych i procesów. Efektem jest raport z listą priorytetów i szacowanym wpływem na wynik.</p>
+      </div>
+      <div class="card">
+        <span class="step">3</span>
+        <h3 data-pl="Stała współpraca" data-en="Ongoing work">Stała współpraca</h3>
+        <p data-pl="Ustalona liczba dni w miesiącu, stały pakiet raportowy i jeden numer telefonu do wszystkich spraw finansowych."
+           data-en="A set number of days per month, a fixed reporting pack and one phone number for every finance matter.">Ustalona liczba dni w miesiącu, stały pakiet raportowy i jeden numer telefonu do wszystkich spraw finansowych.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-pl="Modele współpracy" data-en="Engagement models">Modele współpracy</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 data-pl="Przegląd" data-en="Review">Przegląd</h3>
+        <p class="price" data-pl="projekt jednorazowy" data-en="one-off project">projekt jednorazowy</p>
+        <ul class="plain">
+          <li data-pl="Audyt finansów i procesów" data-en="Audit of finances and processes">Audyt finansów i procesów</li>
+          <li data-pl="Raport z rekomendacjami" data-en="Report with recommendations">Raport z rekomendacjami</li>
+          <li data-pl="Prezentacja dla zarządu" data-en="Presentation for the board">Prezentacja dla zarządu</li>
+        </ul>
+      </div>
+      <div class="card highlight">
+        <h3 data-pl="Abonament" data-en="Retainer">Abonament</h3>
+        <p class="price" data-pl="2–6 dni w miesiącu" data-en="2–6 days per month">2–6 dni w miesiącu</p>
+        <ul class="plain">
+          <li data-pl="Miesięczny pakiet raportowy" data-en="Monthly reporting pack">Miesięczny pakiet raportowy</li>
+          <li data-pl="Budżet i prognoza cash flow" data-en="Budget and cash flow forecast">Budżet i prognoza cash flow</li>
+          <li data-pl="Udział w spotkaniach zarządu" data-en="Attendance at board meetings">Udział w spotkaniach zarządu</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 data-pl="Projekt" data-en="Project">Projekt</h3>
+        <p class="price" data-pl="wycena indywidualna" data-en="priced individually">wycena indywidualna</p>
+        <ul class="plain">
+          <li data-pl="Pozyskanie finansowania" data-en="Raising finance">Pozyskanie finansowania</li>
+          <li data-pl="Due diligence i wycena" data-en="Due diligence and valuation">Due diligence i wycena</li>
+          <li data-pl="Wdrożenie controllingu" data-en="Controlling implementation">Wdrożenie controllingu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontakt">
+    <h2 data-pl="Kontakt" data-en="Contact">Kontakt</h2>
+    <p><strong>CFO – NAZWA SPÓŁKI Sp. z o.o.</strong><br>
+    ul. Przykładowa 1, 00-001 Miasto<br>
+    📞 <a href="tel:+48000000000">+48 000 000 000</a><br>
+    ✉️ <a href="mailto:kontakt@example.pl">kontakt@example.pl</a><br>
+    🌐 <a href="https://www.example.pl">www.example.pl</a></p>
+    <p data-pl="Godziny pracy: Pon–Pt 9:00–17:00" data-en="Business hours: Mon–Fri 9:00–17:00">Godziny pracy: Pon–Pt 9:00–17:00</p>
+    <p class="note"
+       data-pl="Dane kontaktowe są tymczasowe – podmień nazwę spółki, adres, telefon, e-mail i domenę na własne."
+       data-en="Contact details are placeholders – replace the company name, address, phone, e-mail and domain with your own.">Dane kontaktowe są tymczasowe – podmień nazwę spółki, adres, telefon, e-mail i domenę na własne.</p>
+  </footer>
+
+  <script>
+    var TITLES = {
+      pl: 'CFO – Outsourcing dyrektora finansowego',
+      en: 'CFO – Fractional finance director'
+    };
+
+    function switchLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.title = TITLES[lang];
+
+      document.querySelectorAll('[data-' + lang + ']').forEach(function (el) {
+        var value = el.getAttribute('data-' + lang);
+        if (el.tagName === 'META') {
+          el.setAttribute('content', value);
+        } else {
+          el.textContent = value;
+        }
+      });
+
+      document.querySelectorAll('.lang-switch a').forEach(function (a) {
+        a.classList.toggle('active', a.getAttribute('data-lang') === lang);
+      });
+    }
+  </script>
+</body>
 </html>
